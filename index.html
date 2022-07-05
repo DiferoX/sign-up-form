@@ -1,32 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Sign-Up Form</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sign-Up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/card.svg">
+  </head>
 
-    <body>
+  <body>
+    <div class="mainContent">
+      <div class="logoContent">
+        <div class="logo">
+          <h1>Logo</h1>
+        </div>
+      </div>
+
+      <div class="formContent">
         <form action="http://httpbin.org/post" method="post" name="mainForm">
 
-            <label for="firstName">First Name</label>
-            <input type="text" name="firstName" placeholder="First Name">
-            <label for="lastName">Last Name</label>
-            <input type="text" name="lastName" placeholder="Last Name">
-            <br>
-            <label for="email">E-Mail</label>
-            <input type="email" name="email" id="email" placeholder="E-Mail">
-            <label for="phoneN">Phone Number</label>
-            <input type="tel" name="phoneN" id="phoneN" placeholder="Phone Number">
-            <br>
-            <label for="pass1">Password</label>
-            <input type="password" name="pass1" id="pass1" placeholder="Password">
-            <label for="pass2">Confirm Password</label>
-            <input type="password" name="pass2" id="pass2" placeholder="Confirm Password">
-            <br>
-            <input type="submit" value="Create Account">
+          <div class="userInfo">
+            <div class="inputBox">
+              <label for="firstName">First Name *</label>
+              <input type="text" name="firstName" placeholder=" " required>
+            </div>
+            <div class="inputBox">
+              <label for="lastName">Last Name</label>
+              <input type="text" name="lastName" placeholder=" ">
+            </div>
+            <div class="inputBox">
+              <label for="email">E-Mail *</label>
+              <input type="email" name="email" id="email" placeholder=" " required>
+            </div>
+            <div class="inputBox">
+              <label for="phoneN">Phone Number</label>
+              <input type="number" name="phoneN" id="phoneN" placeholder=" ">
+            </div>
+            <div class="inputBox">
+              <!--
+              At least 6 characters
+              At least 1 uppercase character
+              At least 1 lowercase character
+              At least 1 number
+              -->
+              <label for="pass1">Password *</label>
+              <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" id="pass1" name="pass1" placeholder=" " required>
+              <div id="infoPass">
+                <p>
+                  At least 6 characters <br>
+                  At least 1 uppercase character <br>
+                  At least 1 lowercase character <br>
+                  At least 1 number
+                </p>
+              </div>
+            </div>
+            <div class="inputBox">
+              <label for="pass2">Confirm Password *</label>
+              <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" id="pass2" name="pass2" placeholder=" " required>
+            </div>
+          </div>
+
+          <button type="submit" class="btn">Create Account</button>
         </form>
-    </body>
+      </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+  </body>
 
 </html>

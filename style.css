@@ -1,0 +1,135 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body
+{
+  /*background-image: url(images/cyber.jpg);*/
+  background-image: linear-gradient(to left, blue, red);
+}
+
+.mainContent
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(17, 17, 17, 0.2);
+  margin: 0 200px;
+  padding: 60px;
+  gap: 50px;
+}
+
+.logoContent
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aquamarine;
+  border: 2px solid red;
+  height: 800px;
+  width: 600px;
+}
+
+.logo
+{
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 200px;
+  width: 600px;
+}
+
+.formContent
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to top left, #ad38db, #3893cf);
+  border: 2px solid white;
+  border-radius: 20px;
+  box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.5);
+  height: 800px;
+  width: 100%;
+  padding: 25px;
+}
+
+.formContent form .userInfo
+{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+form .userInfo .inputBox
+{
+  width: 48%;
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.userInfo .inputBox input
+{
+  background-color: rgb(200, 200, 200);
+  font-size: 15px;
+  height: 45px;
+  width: 100%;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+label
+{
+  font-size: medium;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+input:focus:empty
+{
+  background-color: white;
+  border: 2px solid black;
+}
+
+input:valid:not(:placeholder-shown)
+{
+  background-color: rgb(117, 255, 135);
+  border: 2px solid rgb(0, 150, 0);
+  /*background: url(images/check.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 290px 10px;*/
+}
+
+input:invalid:not(:focus):not(:placeholder-shown)
+{
+  background-color: palevioletred;
+  border: 2px solid red;
+}
+
+#infoPass
+{
+  color: rgb(180, 0, 0);
+  font-size: 12px;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+/* Botton */
+
+.btn
+{
+  font-size: larger;
+  font-weight: bolder;
+  color: white;
+  height: 50px;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 25px;
+  background-image: linear-gradient(to top left, #ad38db, #3893cf);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  margin-top: 50px;
+}
