@@ -51,6 +51,7 @@ body
   height: 550px;
   width: 100%;
   bottom: 30%;
+  transition: 4s;
 }
 
 #imgHacker
@@ -64,6 +65,8 @@ h1
   font-size: 80px;
   color: white;
   text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+  transition: 4s;
+  text-transform: uppercase;
 }
 
 /* FORM */
@@ -80,6 +83,24 @@ h1
   height: 800px;
   width: 100%;
   padding: 25px;
+}
+
+.mainContent:hover h1
+{
+  text-shadow: 0 0 20px rgb(255, 255, 255),
+  0 0 40px rgb(255, 255, 255),
+  0 0 60px rgb(255, 255, 255),
+  0 0 80px rgb(255, 255, 255);
+  transition: 4s;
+}
+
+.mainContent:hover .logo
+{
+  box-shadow: 0 0 20px rgb(255, 255, 255),
+  0 0 40px rgb(255, 255, 255),
+  0 0 60px rgb(255, 255, 255),
+  0 0 80px rgb(255, 255, 255);
+  transition: 4s;
 }
 
 #headTxt
