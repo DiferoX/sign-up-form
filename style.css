@@ -31,7 +31,7 @@ body
   background-color: aquamarine;
   border: 2px solid red;
   height: 800px;
-  width: 600px;
+  width: 40%;
 }
 
 .logo
@@ -55,6 +55,18 @@ body
   padding: 25px;
 }
 
+#headTxt
+{
+  font-size: 25px;
+  margin-bottom: 50px;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.2);
+}
+
+h2
+{
+  margin-bottom: 20px;
+}
+
 .formContent form .userInfo
 {
   display: flex;
@@ -72,7 +84,7 @@ form .userInfo .inputBox
 
 .userInfo .inputBox input
 {
-  background-color: rgb(200, 200, 200);
+  background-color: rgb(221, 221, 221);
   font-size: 15px;
   height: 45px;
   width: 100%;
@@ -95,7 +107,7 @@ input:focus:empty
 
 input:valid:not(:placeholder-shown)
 {
-  background-color: rgb(117, 255, 135);
+  background-color: rgb(180, 255, 191);
   border: 2px solid rgb(0, 150, 0);
   /*background: url(images/check.svg);
   background-size: 20px;
@@ -105,7 +117,7 @@ input:valid:not(:placeholder-shown)
 
 input:invalid:not(:focus):not(:placeholder-shown)
 {
-  background-color: palevioletred;
+  background-color: rgb(255, 200, 219);
   border: 2px solid red;
 }
 
@@ -129,7 +141,8 @@ input:invalid:not(:focus):not(:placeholder-shown)
   width: 100%;
   border: 2px solid white;
   border-radius: 25px;
-  background-image: linear-gradient(to top left, #ad38db, #3893cf);
+  background-color: #3893cf;
+  /*background-image: linear-gradient(to top left, green, blue);*/
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  margin-top: 50px;
+  margin: 50px 0;
 }

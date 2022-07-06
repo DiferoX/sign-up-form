@@ -12,12 +12,22 @@
     <div class="mainContent">
       <div class="logoContent">
         <div class="logo">
-          <h1>Logo</h1>
+          <h1>BootCamp</h1>
         </div>
       </div>
 
       <div class="formContent">
+        
         <form action="http://httpbin.org/post" method="post" name="mainForm">
+
+          <div id="headTxt">
+            <p>This is not a real online service! You Know you need something like this in your life to help you realize your deepest dreams. <br>
+                Sign up now to get started. <br><br>
+                Yow know you want to.
+            </p>
+          </div>
+
+          <h2>Let's do This!</h2>
 
           <div class="userInfo">
             <div class="inputBox">
@@ -44,8 +54,8 @@
               At least 1 number
               -->
               <label for="pass1">Password *</label>
-              <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" id="pass1" name="pass1" placeholder=" " required>
-              <div id="infoPass">
+              <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" id="pass1" name="pass1" placeholder=" " required oninput="showTxt()" onchange="hideTxt()">
+              <div id="infoPass" hidden>
                 <p>
                   At least 6 characters <br>
                   At least 1 uppercase character <br>
@@ -56,11 +66,16 @@
             </div>
             <div class="inputBox">
               <label for="pass2">Confirm Password *</label>
-              <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" id="pass2" name="pass2" placeholder=" " required>
+              <input pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" type="password" id="pass2" name="pass2" placeholder=" " required oninput ="confirmPass()">
             </div>
           </div>
 
-          <button type="submit" class="btn">Create Account</button>
+          <button type="submit" class="btn" id="btn" disabled>Create Account</button>
+
+          <div>
+            <p>Already have an account? <a href="#">Log in</a></p>
+          </div>
+
         </form>
       </div>
 
