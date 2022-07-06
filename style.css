@@ -8,8 +8,11 @@
 
 body
 {
-  /*background-image: url(images/cyber.jpg);*/
-  background-image: linear-gradient(to left, blue, red);
+  background-image: url(images/code.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-image: linear-gradient(to left, blue, red);*/
 }
 
 .mainContent
@@ -17,36 +20,60 @@ body
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(17, 17, 17, 0.2);
+  background-color: rgba(17, 17, 17, 0);
   margin: 0 200px;
   padding: 60px;
   gap: 50px;
 }
 
+/* LOGO */
+
 .logoContent
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: aquamarine;
-  border: 2px solid red;
+  position: relative;
+  background-color: rgba(127, 255, 212, 0);
+  border: 2px solid rgba(255, 0, 0, 0);
   height: 800px;
-  width: 40%;
+  width: 80%;
 }
 
 .logo
 {
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 200px;
-  width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.5);
+  border: 2px solid white;
+  height: 550px;
+  width: 100%;
+  bottom: 30%;
 }
+
+#imgHacker
+{
+  height: 300px;
+  width: 300px;
+}
+
+h1
+{
+  font-size: 80px;
+  color: white;
+  text-shadow: 5px 5px 5px rgba(255, 255, 255, 0.5);
+}
+
+/* FORM */
 
 .formContent
 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(to top left, #ad38db, #3893cf);
+  background-image: linear-gradient(to top left, #ad38dbc0, #3893cfc0);
   border: 2px solid white;
   border-radius: 20px;
   box-shadow: 0px 0px 100px 0px rgba(255, 255, 255, 0.5);
@@ -88,7 +115,7 @@ form .userInfo .inputBox
   font-size: 15px;
   height: 45px;
   width: 100%;
-  padding: 5px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }
